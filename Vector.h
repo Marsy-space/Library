@@ -11,8 +11,8 @@
 
 class VECTOR_API Vector {
 private:
-    Number x; // Координата X в декартовой системе
-    Number y; // Координата Y в декартовой системе
+    Number x; 
+    Number y; 
 public:
     Vector(Number x, Number y);
     Number getX() const;
@@ -20,13 +20,12 @@ public:
     void setX(Number x);
     void setY(Number y);
 
-    // Методы для работы с полярными координатами
     Number getR() const;   
     Number getPhi() const; 
 
     
     Vector operator+(const Vector& other) const;
 };
-// Глобальные константные векторы
-extern VECTOR_API const Vector zeroVector; // Нулевой вектор (0, 0)
-extern VECTOR_API const Vector oneVector; // Вектор (1, 1)
+extern VECTOR_API const Vector zeroVector; 
+
+extern VECTOR_API const Vector oneVector; 
